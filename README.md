@@ -51,11 +51,9 @@ The stock ticker symbol SPY is used as a proxy for the overall performance of th
 
 The stocks and the companies represented in the data set are as follows:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| No.           | Company Name  | Stock Ticker          | Exchange      | Industry      | Market Capitalization|
+| ------------- |:-------------:| -----:| -------------:| -------------:| -------------:| 
+| 1.            | L'Oréal S.A.  |  LRLCY| Other OTC| Household & Personal Products|114.868|
 
 ## Goals
 
