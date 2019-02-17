@@ -131,7 +131,7 @@ The R-squared (𝑹𝟐) statistic provides a measure of how well the linear reg
 **Linear Regression of Log-returns Against Time**
 
 |  Stock        | Bo (Intercept)  | B1 (Slope)  | 𝑹𝟐 |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -----:|-----------:|
 | SPY      | -4.596e-02 | 3.197e-06 |0.0007493|
 | LRLCY    | -7.611e-02 | 5.438e-06 |0.003802|
 | EL       | -9.462e-02 | 6.723e-06 |0.00207|
@@ -150,7 +150,7 @@ The T statistic with unknown variance and the confidence level of 95% was utiliz
 **Two Sample T-test and Linear Regression**
 
 | Stock        | P-Value        | Slope  | R^2 |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -----:|------------:|
 | LRLCY        | 0.5319 | 0.4072830 |0.2909|
 | EL           | 0.5138 | 0.8374262|0.4381|
 | SSDOY        | 0.5503 | 0.3444580|0.1726|
@@ -185,13 +185,7 @@ The great news is that my wife was elated that I spent my off time to do this an
 
 ### References
 
+* My wife
 * Beth McKenna, “The Stock Market’s “Lipstick Effect” Has Been Red-Hot By Beth McKenna August 30, 2011 Stocks 101” Go Banking Rates, August 30, 2011		<https://www.gobankingrates.com/investing/stocks/stock-market-lipstick-effect-red-hot/>	
 * Business Section, “Lip Reading”,, The Economist,  Jan 22nd 2009 <https://www.economist.com/business/2009/01/22/lip-reading>
 
-## Authors
-
-* **Jude Ken-Kwofie** - *Initial work*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
