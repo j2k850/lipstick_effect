@@ -2,7 +2,7 @@
 
 There are several sophisticated investment strategies and economic indicators that are used to predict stock returns and the general health of the US economy. Strategies like <> consist of several areas of complexity and analysis by leading financial and investment strategist and are studied rigorously in the academia and in professional settings. There are also a set of economic indicators that are considered superstitious or not based in traditional belief or imprecise measures of market trends. 
 
-For this project, I decided to investigate one such economic indicator - “The Lipstick Effect”. The project’s goal is to to find evidence if beauty indulgences can predict stock returns, overall US economic health, and consumer confidence. The Lipstick Effect or Indicator suggests that consumers purchase less expensive business products when they feel unsure of the future of the economy. The Lipstick Effect is a theory that when economic times are tough, consumers stop spending on big-ticket items, but actually increase their spending on smaller indulgences.
+My wife is in the beauty industry and has always asked me to do some analysis to help her out. So, I decided one weekend to investigate one such economic indicator - “The Lipstick Effect”. The goal is to to find evidence if beauty indulgences can predict stock returns, overall US economic health, and consumer confidence. The Lipstick Effect or Indicator suggests that consumers purchase less expensive business products when they feel unsure of the future of the economy. The Lipstick Effect is a theory that when economic times are tough, consumers stop spending on big-ticket items, but actually increase their spending on smaller indulgences.
 
 The following analysis was performed to investigate statistically the investment and economic predictive power of beauty industry stocks: 
 
@@ -112,6 +112,15 @@ Statistical testing was performed following the analysis of the randomness and n
 | Stock        | Variance           | Confidence Interval for 𝝁  | Confidence Interval for 𝝈𝟐|
 | ------------- |:-------------:| -----:| ---------------:|
 | SPY      | 0.0003756545 | (-0.002686535 ,  0.001143101) | (0.0003283128 ,0.0004340864) |
+| LRLCY    | 0.0002142263 | (-0.0006747922, 0.0022172164) | (0.0001872285, 0.0002475485) |
+| EL       | 0.0006012978 | (-0.001992529, 0.002852630)   | (0.0005255195, 0.0006948278) |
+| SSDOY    | 0.0002582469 | (0.000747213, 0.003922484)    | (0.0002257014, 0.0002984164) |
+| COTY     | Error w/ download | | |
+| NUS      | 0.0008722067 | (-0.002126049, 0.003709382)   | (0.0007622873, 0.0010078758) |
+| IPAR     | 0.002889794  | (-0.007030327, 0.003591438)   | (0.002525609,0.003339292) |
+| REV      | 0.003226334  | (-0.009662878 , 0.001560353)  | (0.002819737, 0.003728181) |
+| AVP      | 0.0007555131  | (-0.002912245  0.002518811)  | (0.0006602999,0.0008730308) |
+| ELF     | Error w/ download | | |
 
 As shown in the above table, the 95% confidence intervals for the mean and the variance were quite small. This shows that the beauty stock log-returns centered around the mean and that there was little variability. 				 	 	 		
 
@@ -119,25 +128,38 @@ Following the confidence interval analyses, linear regressions were performed on
 
 The R-squared (𝑹𝟐) statistic provides a measure of how well the linear regression model is fitting the actual data. The R-squared results clearly show that there is not a strong linear relationship stock log-returns and time. The R-squared values for the stock log-returns are all close to zero. Analysis of the scatter-plots, stock log-returns vs. reference date, also indicates that there is no correlation between the two parameters. The linear regression models can not be used to predict the future.
 
-Linear Regression of Log-returns Against Time
+**Linear Regression of Log-returns Against Time**
 
-| Tables        | Are           | Cool  |
+|  Stock        | Bo (Intercept)  | B1 (Slope)  | 𝑹𝟐 |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| SPY      | -4.596e-02 | 3.197e-06 |0.0007493|
+| LRLCY    | -7.611e-02 | 5.438e-06 |0.003802|
+| EL       | -9.462e-02 | 6.723e-06 |0.00207|
+| SSDOY    | -2.480e-01 | 1.771e-05 |0.03345|
+| COTY     | Error w/ download | ||
+| NUS      | -1.000e-01 | 7.133e-06 |0.001607|
+| IPAR     | 1.818e-02  | -1.408e-06 |1.888e-05|
+| REV      | 2.911e-02  | -2.345e-06 |4.696e-05|
+| AVP      | -1.319e-01 | 9.315e-06  |0.003163|
+| COTY     | Error w/ download | ||
 
 ### Two Stock Analysis
 
 The T statistic with unknown variance and the confidence level of 95% was utilized to test the equality of the population means of the stock log-returns. A linear regression was then used to see if there were any similarities. The stock “SPY” was used in all two stock analysis comparisons.
 
-Two Sample T-test and Linear Regression
+**Two Sample T-test and Linear Regression**
 
-| Tables        | Are           | Cool  |
+| Stock        | P-Value        | Slope  | R^2 |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| LRLCY        | 0.5319 | 0.4072830 |0.2909|
+| EL           | 0.5138 | 0.8374262|0.4381|
+| SSDOY        | 0.5503 | 0.3444580|0.1726|
+| COTY         | Error w/ download | ||
+| NUS          | 0.515 | 0.905031|0.3528|
+| IPAR         | 0.5047 | 1.6716246|0.3632|
+| REV          | 0.5165 | 0.756221|0.06659|
+| AVP          | 0.506  | 0.920979|0.4217|
+| ELF         | Error w/ download | ||
 
 The two stock analyses showed that in all cases we failed to reject the null hypothesis of the equality of the population means of the beauty stock log-returns with the SPY stock. The SPY stock is an ETF which follows the S&P 500.  This result does make sense since during the Great Recession of 2008 all stocks were performed badly due to the total financial collapse that lasted from December 2007 to June 2009.
 
@@ -149,7 +171,7 @@ Analyzing the results, we see that the EL stock has the best slope and the R2 pa
 
 The lipstick effect is the theory that when facing an economic crisis consumers will be more willing to buy less costly luxury goods. Instead of buying expensive fur coats, for example, people will buy expensive lipsticks or in general beauty products. For example, there are accounts that lipstick sales doubled after the attacks of 9/11. 	 	 	 		
 			
-The aim of this project was to find evidence of the “The Lipstick Effect” during the unfortunate period of the Great Recession and see if beauty indulgences can be used to predict bear markets, overall US economic health, and consumer confidence. The Great Recession ran from November 8th 2016 to November 6th,2018 and 
+The aim of this work was to find evidence of the “The Lipstick Effect” during the unfortunate period of the Great Recession and see if beauty indulgences can be used to predict bear markets, overall US economic health, and consumer confidence. 
 
 Run tests and analysis of stock log-return normality clearly showed that the selected stocks log returns were normally distributed and consistent with a random sample.
 
@@ -157,7 +179,9 @@ It can also be concluded that future predictions of the beauty stock returns dur
 
 Comparing the beauty stock log returns with the SPY ETF stock show that there was no significant differences in the log returns. Analysis of the slopes and R2 pairings does not show any major trends with the highest slope and R2  pairing being only 0.8374 and 0.4381, respectively. Thus, we can conclude that there is in the cases analyzed we can easily conclude that there is not a strong linear relationship with the beauty stocks and the S&P 500. 
 
-The analyses conducted do not clearly show that the Lipstick Effect can predict that consumers would purchase more beauty or personal care products and thus can be used to foretell market recessions. The sheer enormity of the financial collapse of the Great Recession perhaps caused consumers to forego all “feel good” purchases, thus making it difficult to determine if the “Lipstick Effect” is an old wives tale or something that can be used as a real indication of economic performance. Also, only the stock log-returns were analyzed. The addition of analyzing the company beauty sales could aid in the overall analysis.
+The analyses conducted does not clearly show that the Lipstick Effect can predict that consumers would purchase more beauty or personal care products and thus can be used to foretell market recessions. The sheer enormity of the financial collapse of the Great Recession perhaps caused consumers to forego all “feel good” purchases, thus making it difficult to determine if the “Lipstick Effect” is an old wives tale or something that can be used as a real indication of economic performance. Also, only the stock log-returns were analyzed. The addition of analyzing the company beauty sales could aid in the overall analysis.
+
+The great news is that my wife was elated that I spent my off time to do this analysis and not watch sports for at least one weekend. I have a feeling I will be conducting more of these beauty focused statistical analsyses for my wife.
 
 ### References
 
