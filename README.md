@@ -56,12 +56,12 @@ The stocks and the companies represented in the data set are as follows:
 | 1.            | L'Oréal S.A.  |  LRLCY| Other OTC| Household & Personal Products|114.868|
 | 2.            | The Estée Lauder Companies Inc.  |  EL| New York Stock Exchange| Household & Personal Products|51.199B|
 | 3.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 4.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 5.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 6.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 7.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 8.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
-| 9.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 4.            | Coty Inc.  | COTY` | New York Stock Exchange| Household & Personal Products|6.497B|
+| 5.            | Nu Skin Enterprises, Inc.  |  NUS| New York Stock Exchange| Household & Personal Products|3.606B|
+| 6.            | Inter Parfums, Inc. (IPAR)  |  IPAR| NASDAQ Global Market| Household & Personal Products|1.927B|
+| 7.            | Revlon, Inc.  |  REV| New York Stock Exchange| Household & Personal Products|1.536B|
+| 8.            | Avon Products, Inc.  |  AVP| New York Stock Exchange| Household & Personal Products|889.144M|
+| 9.            | e.l.f. Beauty, Inc.  |  ELF| New York Stock Exchange| Household & Personal Products|615.733M|
 
 ## Goals
 
@@ -86,13 +86,20 @@ To carry-out the statistical analysis, the following questions were raised:
 
 I used the runs test of the randtest package to determine if the stock log-returns were from a random sample. The null hypothesis is the elements in the data set are mutually independent and therefore the data is consistent with a random sample. The alternative hypothesis is the elements in the data set are not mutually independent and therefore the data isn’t consistent with a random sample.
 
-Runs Test for Determining Non-Randomness
+**Runs Test for Determining Non-Randomness**
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|  Stock       |  P-Value       | 
+| ------------- |:-------------:| 
+| SPY      | 0.4812 		| 
+| LRLCY    | 0.07253		| 
+| EL       | 0.9198		| 
+| SSDOY    | 0.4388 		| 
+| COTY     | Error w/ download  | 
+| NUS      | 0.2683  		| 
+| IPAR     | 0.7627  		| 
+| REV      | 0.0857  		| 
+| AVP      | 0.5104  		| 
+| ELF      | Error w/ download	| 
 
 
 All the stocks had a P-value greater than 0.05. Thus the null hypothesis was failed to be rejected and it was concluded that these stocks were consistent with a random sample.
@@ -100,13 +107,11 @@ Histograms and normal Q-Q  of each stock log-returns were created to determine i
 
 Statistical testing was performed following the analysis of the randomness and normality of the stock log-returns. To this end, confidence intervals of the beauty stock log-returns’ mean, 𝜇,  and the variance, 𝜎2 were calculated. The t-distribution was used in the determination of the confidence intervals since variances of the normal distribution from which stock log-returns came from were unknown. Thus, the sample standard deviations, n - 1 degrees of freedom, and the chi-squared distribution was used in the calculation of the confidence intervals tabulated here.
 
-95% Confidence Interval for 𝝁 and 𝝈𝟐
+**95% Confidence Interval for 𝝁 and 𝝈𝟐**
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Stock        | Variance           | Confidence Interval for 𝝁  | Confidence Interval for 𝝈𝟐|
+| ------------- |:-------------:| -----:| ---------------:|
+| SPY      | 0.0003756545 | (-0.002686535 ,  0.001143101) | (0.0003283128 ,0.0004340864) |
 
 As shown in the above table, the 95% confidence intervals for the mean and the variance were quite small. This shows that the beauty stock log-returns centered around the mean and that there was little variability. 				 	 	 		
 
