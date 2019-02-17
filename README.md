@@ -54,6 +54,14 @@ The stocks and the companies represented in the data set are as follows:
 | No.           | Company Name  | Stock Ticker          | Exchange      | Industry      | Market Capitalization|
 | ------------- |:-------------:| -----:| -------------:| -------------:| -------------:| 
 | 1.            | L'Oréal S.A.  |  LRLCY| Other OTC| Household & Personal Products|114.868|
+| 2.            | The Estée Lauder Companies Inc.  |  EL| New York Stock Exchange| Household & Personal Products|51.199B|
+| 3.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 4.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 5.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 6.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 7.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 8.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
+| 9.            | Shiseido Company, Limited  |  SSDOY| Other OTC| Household & Personal Products|24.493B|
 
 ## Goals
 
