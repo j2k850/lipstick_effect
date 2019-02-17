@@ -38,9 +38,8 @@ more.
 ## Plots
 
 ![SPY ETF - Normality](https://github.com/j2k850/lipstick_effect/blob/master/SPY.png)
-![EL ETF - Normality]()https://github.com/j2k850/lipstick_effect/blob/master/EL.png)
-![EL ETF - Normality 2]()https://github.com/j2k850/lipstick_effect/blob/master/EL_normality.png)
-
+![EL ETF - Normality](https://github.com/j2k850/lipstick_effect/blob/master/EL.png)
+![EL ETF - Normality 2](https://github.com/j2k850/lipstick_effect/blob/master/EL_normality.png)
 
 ## Dataset 
 
