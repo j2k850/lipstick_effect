@@ -37,6 +37,11 @@ more.
 
 ## Plots
 
+![SPY ETF - Normality](https://github.com/j2k850/lipstick_effect/blob/master/SPY.png)
+![EL ETF - Normality]()https://github.com/j2k850/lipstick_effect/blob/master/EL.png)
+![EL ETF - Normality 2]()https://github.com/j2k850/lipstick_effect/blob/master/EL_normality.png)
+
+
 ## Dataset 
 
 The data set consists of the daily stock prices of beauty businesses and conglomerates that primarily generate sales or obtain a portion of their sales from retailing beauty-related products. 
@@ -143,10 +148,6 @@ It can also be concluded that future predictions of the beauty stock returns dur
 Comparing the beauty stock log returns with the SPY ETF stock show that there was no significant differences in the log returns. Analysis of the slopes and R2 pairings does not show any major trends with the highest slope and R2  pairing being only 0.8374 and 0.4381, respectively. Thus, we can conclude that there is in the cases analyzed we can easily conclude that there is not a strong linear relationship with the beauty stocks and the S&P 500. 
 
 The analyses conducted do not clearly show that the Lipstick Effect can predict that consumers would purchase more beauty or personal care products and thus can be used to foretell market recessions. The sheer enormity of the financial collapse of the Great Recession perhaps caused consumers to forego all “feel good” purchases, thus making it difficult to determine if the “Lipstick Effect” is an old wives tale or something that can be used as a real indication of economic performance. Also, only the stock log-returns were analyzed. The addition of analyzing the company beauty sales could aid in the overall analysis.
-
-Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
-Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
-Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
 
 ### References
 
